@@ -1,11 +1,16 @@
 import { SxProps } from '@mui/material';
-import { blue, grey, cyan } from '@mui/material/colors';
+import { blue } from '@mui/material/colors';
+
+export const StyledStack: SxProps = {
+    gap: '16px'
+};
 
 export const StyledButton: SxProps = {
     minWidth: '64px',
-    padding: '6px 16px',
-    letterSpacing: '0',
+    width: '100%',
+    padding: '8px 22px',
     zIndex: '1',
+    letterSpacing: '0',
     backgroundColor: blue[500],
     color: 'white',
     fontWeight: 'bold',
@@ -20,17 +25,5 @@ export const StyledButton: SxProps = {
         boxShadow:
             'rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px',
         backgroundColor: 'white'
-    }
-};
-
-export const SettingsStyledButton: SxProps = {
-    ...StyledButton,
-    backgroundColor: grey[300],
-    color: blue[500],
-    '&:hover, &:focus': {
-        backgroundColor: cyan[300]
-    },
-    '&:active': {
-        backgroundColor: blue[500]
     }
 };
